@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+#man-skateboard{
+    animation: man 0.75s ease-in-out infinite alternate;
+    transform-origin: top;
+}
+
+#Skateboard {
+    animation: flip 1.5s ease infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes flip {
+    from{
+        transform: rotateX(0deg);
+    }
+    to{
+        transform: rotateX(360deg);
+    }
+}
+
+
+@keyframes man {
+    from{
+        transform: rotateX(0deg);
+    }
+    to{
+        transform: rotateX(30deg);
+    }
+}
